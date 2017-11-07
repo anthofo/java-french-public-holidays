@@ -14,10 +14,3 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 /.idea/
 /out/
-README.md
-build.gradle
-gradle/
-gradlew
-gradlew.bat
-settings.gradle
-src/
