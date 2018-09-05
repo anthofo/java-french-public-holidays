@@ -25,8 +25,8 @@ public class FrenchPublicHolidays {
      * @return true if the given date is a french public holiday
      */
     public static boolean isHoliday(LocalDate date) {
-        return getHolidays(date.getYear()).keySet() .stream()
-                                                    .anyMatch(holiday -> holiday.equals(date));
+        Map<LocalDate, String> yearHolidays = getHolidays(date.getYear());
+        return yearHolidays.containsKey(date);
     }
 
     /**

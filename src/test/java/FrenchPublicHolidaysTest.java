@@ -274,4 +274,9 @@ public class FrenchPublicHolidaysTest {
         assertTrue(result);
     }
 
+    @Test
+    public void getHolidays_2019_with_lenient_days() {
+        FrenchPublicHolidays.getHolidays(2019);
+    }
+
 }
